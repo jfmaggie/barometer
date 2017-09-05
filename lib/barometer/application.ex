@@ -8,7 +8,7 @@ defmodule Barometer.Application do
 
     # Define workers and child supervisors to be supervised
     children = [
-      # worker(Barometer.Worker, [arg1, arg2, arg3]),
+      worker(ElixirALE.I2C, ["i2c-1", 0x77, [name: Barometer.I2C]]),
     ]
 
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html

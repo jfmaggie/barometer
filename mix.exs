@@ -62,6 +62,7 @@ defmodule Barometer.Mixfile do
       {:bootloader, "~> 0.1"},
       {:nerves_runtime, "~> 0.4"},
       {:nerves_init_gadget, "~> 0.1"},
+      {:elixir_ale, "~> 1.0"}
     ] ++ system(target)
   end
 
